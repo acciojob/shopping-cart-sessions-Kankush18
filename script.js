@@ -11,6 +11,7 @@ const products = [
 ];
 let cartList=document.getElementById('product-list');
 function renderCartProducts(){
+	document.getElementById('cart-list').innerHTML="";
 	let cart=JSON.parse(sessionStorage.getItem("cart")) || [];
 	cart.forEach(product=>{
 		
